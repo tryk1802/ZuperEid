@@ -689,6 +689,158 @@ window.onload = function(){
 
 }
 
+@media(max-width:768px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+    /* TOPBAR */
+
+    .topbar{
+        height:auto;
+        padding:18px;
+    }
+
+    .top-left{
+        font-size:15px;
+    }
+
+    .top-right{
+        gap:10px;
+    }
+
+    .top-right img{
+        width:48px;
+        height:48px;
+    }
+
+    /* LAYOUT */
+
+    .layout{
+        flex-direction:column;
+    }
+
+    /* SIDEBAR */
+
+    .sidebar{
+        width:100%;
+        border-right:none;
+        border-bottom:1px solid #ddd;
+        padding:25px 0;
+    }
+
+    .side-menu{
+        flex-direction:row;
+        justify-content:space-around;
+        gap:0;
+    }
+
+    .side-item{
+        font-size:11px;
+    }
+
+    .side-item.active::after{
+        bottom:-20px;
+        top:auto;
+        left:50%;
+        transform:translateX(-50%);
+        width:120px;
+        height:3px;
+    }
+
+    .icon-circle{
+        width:54px;
+        height:54px;
+    }
+
+    /* CONTENT */
+
+    .content{
+        padding:20px;
+    }
+
+    .heading{
+        font-size:24px;
+        margin-bottom:18px;
+    }
+
+    /* INFO BOX */
+
+    .info-box{
+        padding:22px;
+    }
+
+    .info-wrapper{
+        flex-direction:column;
+        align-items:center;
+        gap:30px;
+    }
+
+    /* PHOTO */
+
+    .photo-section{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .photo-container{
+        width:170px;
+        height:210px;
+    }
+
+    .upload-btn{
+        width:170px;
+    }
+
+    /* DETAILS */
+
+    .details{
+        width:100%;
+        grid-template-columns:1fr;
+        gap:28px;
+    }
+
+    .field{
+        align-items:center;
+        text-align:center;
+    }
+
+    .field input{
+        width:100%;
+        text-align:center;
+        font-size:18px;
+    }
+
+    .field label{
+        font-size:13px;
+    }
+
+    /* SAVE BUTTON */
+
+    .save-btn{
+        width:100%;
+        margin-top:30px;
+        height:52px;
+        font-size:15px;
+    }
+
+    /* FOOTER */
+
+    .footer{
+        flex-wrap:wrap;
+        height:auto;
+        padding:18px;
+        gap:15px;
+        text-align:center;
+        font-size:12px;
+    }
+
+}
+
+    
 </script>
 
 </body>
